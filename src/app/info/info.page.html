@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="info-container">
+    
+    <div class="welcome-header">
+      <h2>Quito Sales Calc</h2>
+      <p>Gestión rápida de compras y cálculo de pagos al instante.</p>
+    </div>
+
+    <!-- Imagen de presentación -->
+    <div class="image-wrapper">
+      <ion-img src="assets/splash.jpeg" alt="Pantalla de inicio" class="splash-img"></ion-img>
+    </div>
+
+    <div class="action-wrapper">
+      <ion-button expand="block" routerLink="/tabs/tab1" color="primary" shape="round" class="start-btn">
+        <ion-icon slot="start" name="cart-outline"></ion-icon>
+        Comenzar Nueva Compra
+      </ion-button>
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title>Cálculo de Pago</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="pago-container">
+    
+    <!-- Resumen de Compra -->
+    <ion-card class="resumen-card">
+      <ion-card-header>
+        <ion-card-subtitle>Artículo Seleccionado</ion-card-subtitle>
+        <ion-card-title>{{ datosCompra.nombre || 'Sin producto registrado' }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="detalle-row">
+          <span>Cantidad:</span>
+          <strong>{{ datosCompra.cantidad }}</strong>
+        </div>
+        <div class="detalle-row">
+          <span>Precio Unitario:</span>
+          <strong>${{ datosCompra.precioUnitario }}</strong>
+        </div>
+        <div class="detalle-row subtotal">
+          <span>Subtotal:</span>
+          <strong>${{ datosCompra.subtotal }}</strong>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Formulario de Pago -->
+    <div class="form-card">
+      <ion-item class="custom-item" lines="inset">
+        <ion-input type="number" label="Descuento (%)" labelPlacement="stacked" [(ngModel)]="descuento" (ionInput)="calcularTotales()" placeholder="0 - 100"></ion-input>
+      </ion-item>
+
+      <ion-item class="custom-item" lines="inset">
+        <ion-input type="number" label="Dinero Entregado ($)" labelPlacement="stacked" [(ngModel)]="dineroRecibido" (ionInput)="calcularTotales()" placeholder="Ej. 50.00"></ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p class="error-msg">{{ mensajeError }}</p>
+      </ion-text>
+    </div>
+
+    <!-- Resultados Financieros -->
+    <ion-card class="resultado-card">
+      <ion-card-header>
+        <ion-card-subtitle>Resumen Financiero</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="total-final">
+          <span>Total Final:</span>
+          <h2>${{ totalFinal.toFixed(2) }}</h2>
+        </div>
+        
+        <div class="status-box">
+          <p class="exact-text"><strong>{{ estadoTexto }}</strong></p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>

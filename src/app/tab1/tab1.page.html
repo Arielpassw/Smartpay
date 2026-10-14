@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Registro de Compra</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="compra-container">
+    <div class="header-section">
+      <ion-icon name="cart" class="header-icon"></ion-icon>
+      <h2>Datos del Producto</h2>
+      <p>Ingrese los detalles para calcular el subtotal.</p>
+    </div>
+
+    <div class="form-card">
+      <ion-item class="custom-item" lines="inset">
+        <ion-input label="Nombre del producto" labelPlacement="stacked" [(ngModel)]="nombre" placeholder="Ej. Camiseta"></ion-input>
+      </ion-item>
+
+      <ion-item class="custom-item" lines="inset">
+        <ion-input type="number" label="Cantidad" labelPlacement="stacked" [(ngModel)]="cantidad" placeholder="Ej. 1"></ion-input>
+      </ion-item>
+
+      <ion-item class="custom-item" lines="inset">
+        <ion-input type="number" label="Precio Unitario ($)" labelPlacement="stacked" [(ngModel)]="precioUnitario" placeholder="Ej. 25.00"></ion-input>
+      </ion-item>
+
+      <!-- Mensaje de error sin *ngIf (se muestra solo si hay texto) -->
+      <ion-text color="danger">
+        <p class="error-msg">{{ mensajeError }}</p>
+      </ion-text>
+
+      <div class="btn-wrapper">
+        <ion-button expand="block" (click)="onSubmit()" class="submit-btn" shape="round">
+          Calcular Pago y Continuar
+          <ion-icon slot="end" name="arrow-forward"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
