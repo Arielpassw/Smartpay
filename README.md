@@ -6,8 +6,6 @@ Aplicación móvil multiplataforma para registrar una compra y calcular de forma
 
 ##  Capturas de la aplicación
 
-Agrega aquí capturas reales de la app en ejecución. Puedes guardar las imágenes en `docs/screenshots/` y reemplazar las rutas de ejemplo.
-
 | Inicio / Información | Compra | Pago |
 |---|---|---|
 | ![Pantalla de inicio](docs/screenshots/inicio.png) | ![Pantalla de compra](docs/screenshots/compra.png) | ![Pantalla de pago](docs/screenshots/pago.png) |
@@ -81,8 +79,6 @@ npx @capacitor/assets generate --assetPath src/assets --android
 
 ### Ícono de la aplicación
 
-Reemplaza el placeholder por una imagen del ícono final (por ejemplo, `docs/branding/app-icon.png`).
-
 ![Ícono de SmartPay](docs/branding/app-icon.png)
 
 ### Splash Screen
@@ -105,11 +101,9 @@ Reemplaza el placeholder por una captura o imagen del Splash Screen (por ejemplo
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone <https://github.com/Arielpassw/Smartpay.git>
 cd SmartPay
 ```
-
-Sustituye `<URL_DEL_REPOSITORIO>` por la URL HTTPS o SSH del repositorio en GitHub.
 
 ### 2. Instalar dependencias
 
@@ -123,7 +117,7 @@ npm ci
 npm start
 ```
 
-Abre la dirección local que muestre Angular en la terminal (normalmente `http://localhost:4200`). Para generar la compilación web de producción:
+Abre la dirección local que muestre Angular en la terminal. Para generar la compilación web de producción:
 
 ```bash
 npm run build
@@ -157,11 +151,11 @@ Desde Android Studio, selecciona un emulador o dispositivo conectado y ejecuta l
 
 ##  Autoría
 
-**Autor:** [Ariel Arias]  
-**Perfil:** Estudiante de Desarrollo de Software 
-**Institución:** [Escuela Politecnica Nacional]  
-**Asignatura:** [Desarrollo de Aplicaciones Moviles]  
+**Autor:** ARIEL ARIAS
+**Perfil:** ESTUDIANTE DE DESARROLLO DE SOFTWARE 
+**Institución:** ESCUELA POLITECNICA NACIONAL
+**Asignatura:** DESARROLLO DE APLICACIONES MOVILES  
 **Año:** 2026
 
-SmartPay se desarrolla con fines académicos para aplicar conocimientos de desarrollo móvil, diseño de interfaces, componentes standalone, navegación y gestión de estado compartido.
+
 
