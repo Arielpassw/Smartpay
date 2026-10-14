@@ -83,13 +83,13 @@ npx @capacitor/assets generate --assetPath src/assets --android
 
 Reemplaza el placeholder por una imagen del ícono final (por ejemplo, `docs/branding/app-icon.png`).
 
-![Ícono de SmartPay — reemplazar por la imagen final](docs/branding/app-icon.png)
+![Ícono de SmartPay](docs/branding/app-icon.png)
 
 ### Splash Screen
 
 Reemplaza el placeholder por una captura o imagen del Splash Screen (por ejemplo, `docs/branding/splash-screen.png`).
 
-![Splash Screen de SmartPay — reemplazar por la imagen final](docs/branding/splash-screen.png)
+![Splash Screen de SmartPay](docs/branding/splash-screen.png)
 
 ##  Requisitos previos
 
