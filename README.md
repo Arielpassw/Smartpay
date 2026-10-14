@@ -152,9 +152,13 @@ Desde Android Studio, selecciona un emulador o dispositivo conectado y ejecuta l
 ##  Autoría
 
 **Autor:** ARIEL ARIAS
+
 **Perfil:** ESTUDIANTE DE DESARROLLO DE SOFTWARE 
+
 **Institución:** ESCUELA POLITECNICA NACIONAL
+
 **Asignatura:** DESARROLLO DE APLICACIONES MOVILES  
+
 **Año:** 2026
 
 
